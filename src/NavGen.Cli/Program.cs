@@ -160,7 +160,8 @@ void PropagateMenu()
 
     var propagated = propagationService.Propagate(sets, options);
     var document = clashBuilder.Build(propagated, "PropagatedClashes");
-    var outputPath = WriteDocument(document, "ClashTests");
+    var outputFolder = PromptForOutputFolder(searchPath);
+    var outputPath = WriteDocument(document, "ClashTests", outputFolder);
     Console.WriteLine($"Generated {propagated.Count} clash tests at {outputPath}");
 }
 
