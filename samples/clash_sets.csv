@@ -1,0 +1,11 @@
+TestName,LeftSet,RightSet,ToleranceMM,Type,Active,Severity,Grouping,Description
+"MEP vs MEP","MEP","MEP",10,Hard,True,,,"MEP coordination"
+"MEP vs Elec","MEP","Elec",10,Hard,True,,,
+"MEP vs Str","MEP","Str",10,Hard,True,,,
+"MEP vs Arc","MEP","Arc",10,Hard,True,,,
+"Arc vs Arc","Arc","Arc",10,Hard,True,,,
+"Arc vs Str","Arc","Str",10,Hard,True,,,
+"Arc vs Elec","Arc","Elec",10,Hard,True,,,
+"Str vs Str","Str","Str",10,Hard,True,,,
+"Str vs Elec","Str","Elec",10,Hard,True,,,
+"Str vs MEP","Str","MEP",10,Hard,True,,,
