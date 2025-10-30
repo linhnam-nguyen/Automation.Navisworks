@@ -6,7 +6,7 @@ namespace NavGen.Tests;
 
 public class ClashTestCsvParserTests
 {
-    private static string SamplesDirectory => Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "samples"));
+    private static string SamplesDirectory => TestDirectories.Samples;
 
     [Fact]
     public void Parse_ShouldReadAllClashTests()
@@ -16,7 +16,8 @@ public class ClashTestCsvParserTests
 
         var result = parser.Parse(path);
 
-        Assert.False(result.HasErrors);
+        var errors = string.Join(Environment.NewLine, result.Errors.Select(error => error.ToString()));
+        Assert.False(result.HasErrors, errors);
         Assert.Equal(10, result.Items.Count);
         Assert.Contains(result.Items, test => test.Name == "MEP vs MEP" && test.LeftSet == "MEP");
     }

@@ -1,20 +1,20 @@
 SetName,Category,PropertyName,Operator,Value,MatchLogic,ColorHex,Description,Folder
-"Arc - WallsFloorsPlumb","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Walls",All,,,,Arc
-"Arc - WallsFloorsPlumb","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Floors",All,,,,Arc
-"Arc - WallsFloorsPlumb","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Plumbing Fixtures",All,,,,Arc
-"Arc - DoorsWindowsStairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Doors",All,,,,Arc
-"Arc - DoorsWindowsStairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Windows",All,,,,Arc
-"Arc - DoorsWindowsStairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Stairs",All,,,,Arc
-"Arc - Ceillings","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Ceilings",All,,,,Arc
-"Ducts","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Ducts",All,,,,MEP
-"Ducts","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Duct Fittings",All,,,,MEP
-"Elec","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Electrical Equipment",All,,,,MEP
-"Elec","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Lighting Devices",All,,,,MEP
-"CT","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Cable Tray Fittings",All,,,,MEP
-"CT","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Cable Trays",All,,,,MEP
-"Str - Walls, Floors","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Walls",All,,,,Str
-"Str - Walls, Floors","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Floors",All,,,,Str
-"Str - Framing, Col, Stairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Structural Columns",All,,,,Str
-"Str - Framing, Col, Stairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Structural Framing",All,,,,Str
-"Str - Framing, Col, Stairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Stairs",All,,,,Str
-"Str - Foundations","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Structural Foundations",All,,,,Str
+"Arc - WallsFloorsPlumb","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Walls",All,,,Arc
+"Arc - WallsFloorsPlumb","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Floors",All,,,Arc
+"Arc - WallsFloorsPlumb","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Plumbing Fixtures",All,,,Arc
+"Arc - DoorsWindowsStairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Doors",All,,,Arc
+"Arc - DoorsWindowsStairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Windows",All,,,Arc
+"Arc - DoorsWindowsStairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Stairs",All,,,Arc
+"Arc - Ceillings","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Ceilings",All,,,Arc
+"Ducts","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Ducts",All,,,MEP
+"Ducts","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Duct Fittings",All,,,MEP
+"Elec","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Electrical Equipment",All,,,MEP
+"Elec","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Lighting Devices",All,,,MEP
+"CT","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Cable Tray Fittings",All,,,MEP
+"CT","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Cable Trays",All,,,MEP
+"Str - Walls, Floors","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Walls",All,,,Str
+"Str - Walls, Floors","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Floors",All,,,Str
+"Str - Framing, Col, Stairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Structural Columns",All,,,Str
+"Str - Framing, Col, Stairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Structural Framing",All,,,Str
+"Str - Framing, Col, Stairs","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Stairs",All,,,Str
+"Str - Foundations","LcRevitData_Element|Element","LcRevitPropertyElementCategory|Category",Equals,"wstring:Structural Foundations",All,,,Str

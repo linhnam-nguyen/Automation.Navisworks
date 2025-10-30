@@ -9,9 +9,9 @@ namespace NavGen.Tests;
 
 public class SearchSetXmlBuilderTests
 {
-    private static string RootDirectory => Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", ".."));
-    private static string SamplesDirectory => Path.Combine(RootDirectory, "samples");
-    private static string XmlSamplesDirectory => Path.Combine(RootDirectory, "SamplesXML");
+    private static string RootDirectory => TestDirectories.SolutionRoot;
+    private static string SamplesDirectory => TestDirectories.Samples;
+    private static string XmlSamplesDirectory => TestDirectories.XmlSamples;
 
     [Fact]
     public void Build_ShouldMatchSampleStructure()
@@ -23,7 +23,8 @@ public class SearchSetXmlBuilderTests
         var expectedPath = Path.Combine(XmlSamplesDirectory, "SearchSets.xml");
 
         var parseResult = parser.Parse(csvPath);
-        Assert.False(parseResult.HasErrors);
+        var errors = string.Join(Environment.NewLine, parseResult.Errors.Select(error => error.ToString()));
+        Assert.False(parseResult.HasErrors, errors);
 
         var document = builder.Build(parseResult.Items);
         var expected = XDocument.Load(expectedPath);

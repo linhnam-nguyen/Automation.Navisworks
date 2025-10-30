@@ -24,7 +24,7 @@ public class ClashPropagationServiceTests
         var options = new PropagationOptions
         {
             IncludeSelfComparisons = false,
-            IncludeSameFolder = false,
+            IncludeSameFolder = true,
             DefaultToleranceMillimeters = 5,
             TestType = "Hard"
         };

@@ -201,7 +201,8 @@ void GenerateSearchSets(string path)
     }
 
     var document = searchBuilder.Build(result.Items);
-    var outputPath = WriteDocument(document, "SearchSets");
+    var outputFolder = PromptForOutputFolder(path);
+    var outputPath = WriteDocument(document, "SearchSets", outputFolder);
     Console.WriteLine($"Generated search set XML at {outputPath}");
 }
 
@@ -214,13 +215,14 @@ void GenerateClashTests(string path)
     }
 
     var document = clashBuilder.Build(result.Items, "ClashSets");
-    var outputPath = WriteDocument(document, "ClashTests");
+    var outputFolder = PromptForOutputFolder(path);
+    var outputPath = WriteDocument(document, "ClashTests", outputFolder);
     Console.WriteLine($"Generated clash test XML at {outputPath}");
 }
 
-string WriteDocument(XDocument document, string prefix)
+string WriteDocument(XDocument document, string prefix, string outputFolder)
 {
-    var folder = ResolveOutputFolder();
+    var folder = Path.GetFullPath(outputFolder);
     Directory.CreateDirectory(folder);
     var timestamp = DateTime.UtcNow.ToString("yyyyMMdd_HHmmss", CultureInfo.InvariantCulture);
     var filePath = Path.Combine(folder, $"{prefix}_{timestamp}.xml");
@@ -240,6 +242,29 @@ string WriteDocument(XDocument document, string prefix)
 }
 
 string ResolveOutputFolder() => Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, configuration.Output.Folder));
+
+string PromptForOutputFolder(string csvPath)
+{
+    var defaultFolder = Path.GetDirectoryName(csvPath);
+    if (string.IsNullOrEmpty(defaultFolder))
+    {
+        defaultFolder = Environment.CurrentDirectory;
+    }
+
+    if (Console.IsInputRedirected)
+    {
+        return defaultFolder;
+    }
+
+    Console.Write($"Output folder [{defaultFolder}]: ");
+    var input = Console.ReadLine();
+    if (string.IsNullOrWhiteSpace(input))
+    {
+        return defaultFolder;
+    }
+
+    return Path.GetFullPath(input.Trim());
+}
 
 string? PromptForPath(string label, string? last, bool allowEmpty = false)
 {

@@ -4,12 +4,7 @@ namespace NavGen.Core.Configuration;
 
 public static class ConfigurationLoader
 {
-    private static readonly JsonSerializerOptions Options = new(JsonSerializerOptions.Default)
-    {
-        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-        ReadCommentHandling = JsonCommentHandling.Skip,
-        WriteIndented = true
-    };
+    private static readonly AppConfigurationJsonContext Context = AppConfigurationJsonContext.Default;
 
     public static AppConfiguration Load(string? path)
     {
@@ -19,7 +14,7 @@ public static class ConfigurationLoader
         }
 
         using var stream = File.OpenRead(path);
-        var configuration = JsonSerializer.Deserialize<AppConfiguration>(stream, Options);
+        var configuration = JsonSerializer.Deserialize(stream, Context.AppConfiguration);
         return configuration ?? new AppConfiguration();
     }
 
@@ -31,7 +26,7 @@ public static class ConfigurationLoader
             Directory.CreateDirectory(directory);
         }
 
-        var json = JsonSerializer.Serialize(configuration, Options);
+        var json = JsonSerializer.Serialize(configuration, Context.AppConfiguration);
         File.WriteAllText(path, json);
     }
 }

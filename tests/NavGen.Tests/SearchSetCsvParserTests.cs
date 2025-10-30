@@ -6,7 +6,7 @@ namespace NavGen.Tests;
 
 public class SearchSetCsvParserTests
 {
-    private static string SamplesDirectory => Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "samples"));
+    private static string SamplesDirectory => TestDirectories.Samples;
 
     [Fact]
     public void Parse_ShouldReadAllSearchSets()
@@ -17,7 +17,8 @@ public class SearchSetCsvParserTests
 
         var result = parser.Parse(path);
 
-        Assert.False(result.HasErrors);
+        var errors = string.Join(Environment.NewLine, result.Errors.Select(error => error.ToString()));
+        Assert.False(result.HasErrors, errors);
         Assert.Equal(9, result.Items.Count);
         Assert.Contains(result.Items, set => set.Name == "Arc - WallsFloorsPlumb" && set.Criteria.Count == 3);
         Assert.Contains(result.Items, set => set.Name == "Str - Foundations" && set.Criteria.Count == 1);
