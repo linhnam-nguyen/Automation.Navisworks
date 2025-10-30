@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://download.autodesk.com/us/navisworks/schemas/nw-exchange-12.0.xsd" units="ft" filename="" filepath="">
+  <batchtest name="ClashSets" internal_name="ClashSets" units="ft">
+    <clashtests>
+      <clashtest name="MEP vs MEP" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="MEP vs Elec" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Elec</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="MEP vs Str" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Str</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="MEP vs Arc" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Arc</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="Arc vs Arc" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Arc</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Arc</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="Arc vs Str" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Arc</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Str</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="Arc vs Elec" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Arc</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Elec</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="Str vs Str" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Str</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Str</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="Str vs Elec" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="67108865">
+            <locator>lcop_selection_set_tree/Str</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="117440513">
+            <locator>lcop_selection_set_tree/Elec</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+      <clashtest name="Elec vs Elec" test_type="hard" status="ok" tolerance="0.0328083990" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Elec</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/Elec</locator>
+          </clashselection>
+        </right>
+        <rules/>
+      </clashtest>
+    </clashtests>
+    <selectionsets>
+      <viewfolder name="Arc" guid="9e5ccb31-229e-4dd9-b61e-afa5e34b75db">
+        <selectionset name="Arc - WallsFloorsPlumb" guid="7a1e9d87-97b7-47d5-a7dd-0e7349557064">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Walls</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Floors</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Plumbing Fixtures</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Arc - DoorsWindowsStairs" guid="8db21c33-2242-4d21-bf0a-44797f03b635">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Doors</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Windows</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Stairs</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Arc - Ceillings" guid="fa2947b1-9f5a-42b3-92d6-4deb54c5d8ec">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Ceilings</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+      </viewfolder>
+      <viewfolder name="MEP" guid="c380965e-91cf-451a-acab-475f2058da65">
+        <selectionset name="Ducts" guid="ae3a3f57-b2e5-436d-9fe3-ec76b096b838">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Ducts</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Duct Accessories</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Duct Fittings</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Duct Linings</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Flex Ducts</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Duct Insulations</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Air Terminals" guid="b94805f7-0332-4fcc-ba93-a051f56f4e27">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Air Terminals</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Mech eq" guid="2b4252fa-b5fb-4dd5-a8cc-74f447ce5529">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Mechanical Equipment</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Pipes" guid="00094488-183f-4696-8946-b25e86871f9c">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Pipe Accessories</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Pipe Fittings</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Pipe Insulations</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Pipes</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Flex Pipes</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Sprinklers" guid="3242ba02-6b4a-4c14-b65d-b1b3873a7be6">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Sprinklers</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+      </viewfolder>
+      <viewfolder name="Elec" guid="fafa1120-85a6-4db7-a6d5-dbe3345b80da">
+        <selectionset name="Elec eq" guid="b96a0339-88f0-4967-ab91-b4459c6422e4">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Electrical Equipment</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Elec Fixtures" guid="598f776a-6d2f-4187-88c4-ab0585b72762">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Electrical Fixtures</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="LC Systems" guid="89f14dd2-b9b1-4cc8-8df3-21c2acf94f95">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Data Devices</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Fire Alarm Devices</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Communication Devices</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Security Devices</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Lighting" guid="6c7b802f-99c7-4f03-9296-46a7189b5c3f">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Lighting Fixtures</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Lighting Devices</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="CT" guid="dd5b1d8a-5ef3-48b5-a23c-e61882d79b96">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Cable Tray Fittings</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Cable Trays</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+      </viewfolder>
+      <viewfolder name="Str" guid="237b77a6-5952-4633-a9e9-3008e2043933">
+        <selectionset name="Str - Walls, Floors" guid="7fac004d-d2c1-4f2e-989f-ae72158c5ccd">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Walls</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Floors</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Str - Framing, Col, Stairs" guid="3efb17c5-580c-4f83-9200-b03720230fe5">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Structural Columns</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Structural Framing</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="64">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Stairs</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+        <selectionset name="Str - Foundations" guid="b96bba01-6df2-4d37-b41d-e13d4f0edd9d">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="0">
+                <category>
+                  <name internal="LcRevitData_Element">Element</name>
+                </category>
+                <property>
+                  <name internal="LcRevitPropertyElementCategory">Category</name>
+                </property>
+                <value>
+                  <data type="wstring">Structural Foundations</data>
+                </value>
+              </condition>
+            </conditions>
+          </findspec>
+        </selectionset>
+      </viewfolder>
+    </selectionsets>
+  </batchtest>
+</exchange>
