@@ -5,3 +5,5 @@ out/
 **/obj/
 .vs/
 navgen.state.json
+
+.fake

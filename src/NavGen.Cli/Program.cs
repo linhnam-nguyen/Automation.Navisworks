@@ -228,8 +228,7 @@ string WriteDocument(XDocument document, string prefix)
     {
         Encoding = new UTF8Encoding(false),
         Indent = true,
-        NewLineChars = "
-",
+        NewLineChars = "\n",
         NewLineHandling = NewLineHandling.Replace
     };
 
@@ -306,6 +305,5 @@ void WriteBanner()
 {
     Console.WriteLine("============================================");
     Console.WriteLine(" NavGen :: Navisworks XML Generator ");
-    Console.WriteLine("============================================
-");
+    Console.WriteLine("============================================");
 }

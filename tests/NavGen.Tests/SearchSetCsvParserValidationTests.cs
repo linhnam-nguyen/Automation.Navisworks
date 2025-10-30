@@ -12,9 +12,11 @@ public class SearchSetCsvParserValidationTests
     {
         var configuration = new AppConfiguration();
         var parser = new SearchSetCsvParser(configuration);
-        var csv = "SetName,Category,PropertyName,Operator,Value,MatchLogic
-,,Property,Equals,Value,All
-Name,Category,PropertyName,Equals,Value,Invalid";
+        var csv = """
+        SetName,Category,PropertyName,Operator,Value,MatchLogic
+        ,,Property,Equals,Value,All
+        Name,Category,PropertyName,Equals,Value,Invalid
+        """;
         var path = Path.GetTempFileName();
         File.WriteAllText(path, csv);
 

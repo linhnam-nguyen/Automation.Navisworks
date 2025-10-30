@@ -25,8 +25,10 @@ public class ClashTestCsvParserTests
     public void Parse_ShouldValidateType()
     {
         var parser = new ClashTestCsvParser();
-        var csv = "TestName,LeftSet,RightSet,ToleranceMM,Type
-Name,Left,Right,-1,Soft";
+        var csv = """
+        TestName,LeftSet,RightSet,ToleranceMM,Type
+        Name,Left,Right,-1,Soft
+        """;
         var path = Path.GetTempFileName();
         File.WriteAllText(path, csv);
 
